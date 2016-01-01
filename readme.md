@@ -74,7 +74,8 @@ li {
 `
 ```
 
-Sass imports are also supported currently
+Sass imports are also supported currently. Import paths are derived from the parent directory
+of the compiled file and the `sassDir` from the config file.
 
 
 # Usage
