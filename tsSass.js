@@ -3,8 +3,17 @@ var path = require('path')
 var sass = require('node-sass')
 var glob = require("glob")
 var importDeps = {}
+var configPath = './tsSassConfig.json'
+var options
 
-var options = JSON.parse(fs.readFileSync(path.resolve('./tsSassConfig.json'), 'utf8'));
+try {
+  fs.accessSync(configPath, fs.F_OK);
+  options = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+} catch (e) {
+  throw Error("A tsSassConfig.json is required to use ts-sass. Note: sassDir should be something that doesn't contain node_modules")
+  options = {}
+}
+
 var sassDir = options && options.sassDir //"app"
 var sassSubDir = options && options.sassSubDir //"sass"
 

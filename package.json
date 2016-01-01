@@ -1,9 +1,12 @@
 {
-  "name": "ts-sass",
+  "name": "typescript-sass",
   "version": "0.0.0",
-  "description": "",
-  "private": true,
+  "description": "parse sass files for typescript components",
+  "private": false,
   "directories": {},
+  "bin": {
+    "ts-sass": "./bin/ts-sass"
+  },
   "scripts": {
     "start": "node tsSass.js"
   },
