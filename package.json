@@ -1,0 +1,20 @@
+{
+  "name": "ts-sass",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "directories": {},
+  "scripts": {
+    "start": "node tsSass.js"
+  },
+  "repository": "",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "author": "Adam Rensel",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^6.0.3",
+    "node-sass": "^3.4.2"
+  }
+}
