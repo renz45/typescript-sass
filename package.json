@@ -2,6 +2,7 @@
   "name": "typescript-sass",
   "version": "0.0.0",
   "description": "parse sass files for typescript components",
+  "homepage": "https://github.com/renz45/typescript-sass",
   "private": false,
   "directories": {},
   "bin": {
@@ -10,7 +11,7 @@
   "scripts": {
     "start": "node tsSass.js"
   },
-  "repository": "",
+  "repository": "git@github.com:renz45/typescript-sass.git",
   "engines": {
     "node": ">= 0.10.0"
   },
