@@ -3,7 +3,7 @@
 ## What is this?
 This is an experiment that came about from learning a bit of Angular2 and wanting to
 use sass in component styles. The idea behind this module is that it watches your
-project for changes in sass files, but instead of making on big sass file it compiles
+project for changes in sass files, but instead of making one big sass file it compiles
 those files into typescript files that can be imported into other typescript files.
 
 If your loader supports it you can technically import raw text files and use those
