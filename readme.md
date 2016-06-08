@@ -98,7 +98,8 @@ For Basic configuration you can include a `tsSassConfig.json` file in your proje
 ```json
 {
   "sassDir": "app",
-  "sassSubDir": "sass"
+  "sassSubDir": "sass",
+  "watch": true
 }
 ```
 
@@ -110,6 +111,9 @@ it's just using `fs.watch` so there isn't a great way to exclude node_modules.
 you component directories. I've been experimenting with a `/sass` directory to reduce clutter.
 If this option isn't set then the compiled `.ts` files will be placed in the same directory
 as the original `.sass` files.
+
+`watch` - Indicates if you want your sass files watched for changes. If option isn't set or
+set to false, then the compilation will happen once and then exit.
 
 # Wat, no tests?!
 Yea, its just an experiment at this point and it's small enough where I'm not 
