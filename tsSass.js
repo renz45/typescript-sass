@@ -62,7 +62,7 @@ var buildModuleFile = function(css) {
   return [
     'export default `',
     css,
-    '`'
+    '`;\n'
   ].join("\n")
 }
 
